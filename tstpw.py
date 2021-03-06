@@ -61,7 +61,7 @@ class TSPTW:
             valor_matriz_float = valor_matriz.astype(np.float)
             self.dist = np.array(valor_matriz_float).reshape(self.N, self.N)
 
-            # print(self.dist)
+            print(self.dist)
 
             # Captura de intervalos de ventanas de tiempo
             intervalos_der = []
@@ -78,8 +78,8 @@ class TSPTW:
             self.izq = intervalos_izq_np.astype(np.float)
             self.der = intervalos_der_np.astype(np.float)
 
-            # print(self.izq)
-            # print(self.der)
+            print(self.izq)
+            print(self.der)
 
             
             self.recorrido = np.zeros(self.N+2, dtype=int)
